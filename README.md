@@ -6,7 +6,7 @@ Please run the MATLAB program `run_stress_min.m` for the first numerical example
 
 ## Introduction
 
-The repository here is for the paper: [An efficient 146-line 3D sensitivity analysis code of stress-based topology optimization written in MATLAB](https://link.springer.com/article/10.1007/s11081-021-09675-3). The 146 lines code includes the finite element analysis and p-norm stress sensitivity based on the adjoint method, verified by finite difference approximation. The code uses the [Method of Moving Asymptotes (MMA) Optimizer](http://www.smoptit.se/) as the nonlinear optimizer. The code can be extended for different stress related 3D topology optimization problems and is intended for educational purposes.
+The repository here is for the paper: [An efficient 146-line 3D sensitivity analysis code of stress-based topology optimization written in MATLAB](https://link.springer.com/article/10.1007/s11081-021-09675-3). The 146 lines code includes the finite element analysis and p-norm stress sensitivity based on the adjoint method, verified by finite difference approximation. The code uses the [Method of Moving Asymptotes (MMA) Optimizer](http://www.smoptit.se/) as the nonlinear optimizer. The finite element formulation is derived from the paper by Liu et al.: [An efficient 3D topology optimization code written in Matlab](https://doi.org/10.1007/s00158-014-1107-x). More details about the formulation can be found there. The code can be extended for different stress related 3D topology optimization problems and is intended for educational purposes.
 
 ## Included Files
 
@@ -22,7 +22,7 @@ The repository here is for the paper: [An efficient 146-line 3D sensitivity anal
 
 ## Citation
 
-If you have used this code, please cite our paper:
+If you have used this code, please cite our paper as well as Liu et al.:
 ```
 @Article{Deng2021,
 author={Deng, Hao
@@ -36,5 +36,23 @@ day={26},
 issn={1573-2924},
 doi={10.1007/s11081-021-09675-3},
 url={https://doi.org/10.1007/s11081-021-09675-3}
+}
+```
+
+```
+@Article{Liu2014,
+author = {Kai Liu and Andrés Tovar},
+doi = {10.1007/s00158-014-1107-x},
+issn = {16151488},
+issue = {6},
+journal = {Structural and Multidisciplinary Optimization},
+keywords = {Compliance,Compliant mechanism,Heat conduction,Matlab,Non-linear programming,Topology optimization},
+month = {12},
+pages = {1175-1196},
+publisher = {Springer Verlag},
+title = {An efficient 3D topology optimization code written in Matlab},
+volume = {50},
+url = {http://top3dapp.com.},
+year = {2014},
 }
 ```

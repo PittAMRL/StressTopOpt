@@ -145,3 +145,30 @@ B_3=[0,0,0.62201,0,0,-0.62201,0,0
 B=[B_1,B_2,B_3];
 end
 end
+% =========================================================================
+% The present code is part of the journal paper by Deng et al. 2021 and is
+% derived from the code which was part of the paper by Liu et al. 2014.
+% -------------------------------------------------------------------------
+% Please send your suggestions and comments to: albertto@pitt.edu
+% -------------------------------------------------------------------------
+% The code is intended for educations purposes, and the details and
+% extensions can be found in the paper:
+% Deng, H., Vulimiri, P.S. & To, A.C. An efficient 146-line 3D sensitivity
+% analysis code of stress-based topology optimization written in MATLAB.
+% Optim Eng (2021). https://doi.org/10.1007/s11081-021-09675-3
+% -------------------------------------------------------------------------
+% Details of the finite element formulation from Liu et al. can be found in
+% the paper:
+% Liu, K., Tovar, A. An efficient 3D topology optimization code written in
+% Matlab. Struct Multidisc Optim 50, 1175–1196 (2014).
+% https://doi.org/10.1007/s00158-014-1107-x
+% -------------------------------------------------------------------------
+% The code can be downloaded from the website:
+% https://github.com/PittAMRL/StressTopOpt
+% -------------------------------------------------------------------------
+% The code from Liu et al. from which this is derived from, can be
+% downloaded from: http://www.top3dapp.com/
+% -------------------------------------------------------------------------
+% Disclaimer:
+% The code may be distributed and used for educational purposes.
+% The authors do not guarantee that the code is free from errors.
