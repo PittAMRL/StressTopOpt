@@ -32,7 +32,7 @@ maxoutit  = 120;
 kkttol  = 0;
 x_his=zeros(nelx*nely*nelz,maxoutit);
 if outeriter < 0.5
-[f0val,df0dx,fval,dfdx]=stress_minimize(xval,Hs,H);
+[f0val,df0dx,fval,dfdx]=stress_minimize(xval,Hs,H,nelx,nely,nelz);
 innerit=0;
 outvector1 = [outeriter innerit xval'];
 outvector2 = [f0val fval'];
@@ -52,7 +52,7 @@ raa0,raa,f0val,df0dx,fval,dfdx,a0,a,c,d);
 xold2 = xold1;
 xold1 = xval;
 xval  = xmma;
-[f0val,df0dx,fval,dfdx]=stress_minimize(xval,Hs,H);
+[f0val,df0dx,fval,dfdx]=stress_minimize(xval,Hs,H,nelx,nely,nelz);
 % PRINT RESULTS
 fprintf(' It.:%5i      P-norm Stress.:%11.4f   Vol.:%7.3f \n',outit,f0val, ...
     mean(xval(:)));
